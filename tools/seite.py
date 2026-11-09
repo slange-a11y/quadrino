@@ -120,7 +120,7 @@ VORLAGE = '''<!doctype html>
 <meta property="og:image" content="https://slange-a11y.github.io/quadrino/img/teaser.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="{p}icon.png">
-<link rel="stylesheet" href="{p}style.css">
+<link rel="stylesheet" href="{p}style.css?v=202611091656">
 </head>
 <body>
 <div class="wrap">
