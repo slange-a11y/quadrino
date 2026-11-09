@@ -211,3 +211,47 @@ p.lead { font-size: 1.12rem; }
   .buehne::before, .buehne i, .hero img, .roboter img, .intro-zeile img, .gewinn .phone { animation: none !important; }
   .js .gleiten { opacity: 1; transform: none; transition: none; }
 }
+
+/* ---------- Verkaufsseite (09.11.2026): Knopf, Vertrauen, Vergleich, Fragen ---------- */
+.top .cta-klein { margin-left: auto; }
+.cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--mint); color: var(--ink); font-weight: 700; font-size: 1.08rem;
+  padding: 14px 24px; border-radius: 999px; text-decoration: none;
+  box-shadow: 0 10px 26px rgba(95, 227, 179, .25);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.cta:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 14px 32px rgba(95, 227, 179, .35); }
+.cta.leise { background: transparent; color: var(--cream); border: 1px solid var(--line); box-shadow: none; }
+.cta-klein .cta { padding: 9px 16px; font-size: .95rem; }
+.cta-zeile { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 22px; }
+.cta-hinweis { color: var(--muted); font-size: .92rem; margin-top: 10px; }
+
+.vertrauen { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 22px; padding: 0; list-style: none; color: var(--cream); font-size: .95rem; }
+.vertrauen li::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--mint); margin-right: 8px; vertical-align: middle; }
+
+.vergleich { width: 100%; border-collapse: collapse; margin-top: 18px; font-size: 1rem; }
+.vergleich th, .vergleich td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.vergleich th { font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.vergleich td:last-child { color: var(--mint); font-weight: 600; }
+.vergleich td:nth-child(2) { color: var(--muted); }
+.tabelle { overflow-x: auto; }
+
+.zitat { font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.25; font-weight: 700; max-width: 26ch; text-wrap: balance; }
+.band.creme .zitat { color: var(--ink); }
+
+.fragen details { border-bottom: 1px solid var(--line); padding: 14px 0; }
+.fragen summary { cursor: pointer; font-weight: 600; font-size: 1.05rem; list-style: none; }
+.fragen summary::-webkit-details-marker { display: none; }
+.fragen summary::after { content: "+"; float: right; color: var(--mint); font-weight: 700; }
+.fragen details[open] summary::after { content: "–"; }
+.fragen details p { margin: 10px 0 0; color: var(--muted); }
+
+.schluss { text-align: left; }
+.schluss .zitat { color: var(--cream); }
+
+.roboter.drei { grid-template-columns: repeat(3, 1fr); max-width: 520px; }
+@media (max-width: 820px) { .roboter.drei { grid-template-columns: repeat(3, 1fr); } }
+/* Zwei Telefone nebeneinander in einer Spalte: jedes halb so breit (gewinnt gegen .split .phone) */
+.split .phones { margin-bottom: 0; justify-content: center; }
+.split .phones .phone { width: calc(50% - 6px); max-width: 240px; margin-inline: 0; }
