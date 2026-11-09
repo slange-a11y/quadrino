@@ -2,9 +2,13 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quadrino – Sudoku für alle</title>
-<meta name="description" content="Quadrino ist ein Sudoku für iPhone und iPad: für Kinder mit Roboter und Kinderpfad, für Erwachsene in ruhigem Design. Ohne Konto, ohne Werbung, Abgleich über iCloud.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quadrino Sudoku</title>
+<meta name="description" content="Quadrino ist ein Sudoku für iPhone und iPad, in dem Kinder und Erwachsene spielen: für Kinder mit Roboter und Stufen von 4×4 bis 9×9, für Erwachsene in Glas und Metall mit Hinweisen, die die Lösungstechnik nennen. Ohne Werbung, ohne Konto.">
+<meta property="og:title" content="Quadrino Sudoku">
+<meta property="og:description" content="Ein Sudoku für Kinder und Erwachsene. Ohne Werbung, ohne Konto, ohne Abo.">
+<meta property="og:image" content="https://slange-a11y.github.io/quadrino/img/teaser.jpg">
+<meta property="og:type" content="website">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,35 +20,104 @@
       <div class="name">Quadrino</div>
       <div class="sub">Sudoku für iPhone und iPad</div>
     </div>
+    <nav class="menu">
+      <a class="active" href="./">Start</a>
+      <a href="support.html">Support</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="en/">English</a>
+    </nav>
   </header>
+</div>
 
-  <nav class="menu">
-    <a class="active" href="./">Start</a>
-    <a href="support.html">Support</a>
-    <a href="datenschutz.html">Datenschutz</a>
-    <a href="en/">English</a>
-  </nav>
+<div class="hero">
+  <img src="img/banner.jpg" srcset="img/banner-768.jpg 768w, img/banner.jpg 1536w" sizes="(max-width: 800px) 100vw, 1240px" alt="Cremefarbene Spielkacheln und ein kleiner Roboter links, ein Raster aus Glaskacheln rechts">
+</div>
 
-  <h1>Ein Sudoku, das mitwächst.</h1>
-  <p class="lead">Kinder lernen mit einem kleinen Roboter, was Reihe, Spalte und Block bedeuten, und arbeiten sich von 4×4 bis 9×9 vor. Erwachsene spielen in einem ruhigen, klaren Design mit Merkzahlen, Zeit und vier Schwierigkeitsstufen.</p>
-
-  <div class="hero-grid" aria-hidden="true">
-    <i>1</i><i></i><i></i>
-    <i></i><i class="on">5</i><i></i>
-    <i></i><i></i><i>9</i>
+<div class="wrap">
+  <div class="intro">
+    <h1>Ein Sudoku für Kinder und Erwachsene.</h1>
+    <p>Kinder lernen mit einem kleinen Roboter, was Reihe, Spalte und Block bedeuten. Erwachsene spielen in derselben App bis 9×9 experte, und die Hinweise nennen die Technik, mit der man selbst draufkommt.</p>
   </div>
 
-  <div class="tiles">
-    <div class="tile"><b>Zwei Darstellungen</b><span>Beim Anlegen eines Profils wählst du Kind oder Erwachsen. Das bestimmt Aussehen, Hilfen und Tempo.</span></div>
-    <div class="tile"><b>Hinweise mit Begründung</b><span>Die Glühbirne zeigt nicht nur die Zahl, sondern erklärt, warum nur sie passt.</span></div>
-    <div class="tile"><b>Mehrere Profile</b><span>Jedes Familienmitglied hat eigenen Fortschritt, eigene Sterne und Sticker.</span></div>
-    <div class="tile"><b>Auf allen Geräten gleich</b><span>Der Fortschritt liegt in deiner iCloud. Ohne iCloud bleibt alles auf dem Gerät.</span></div>
-    <div class="tile"><b>Rätsel des Tages</b><span>Jeden Tag ein Rätsel, für alle Profile dasselbe.</span></div>
-    <div class="tile"><b>Nichts im Hintergrund</b><span>Kein Konto, keine Werbung, keine Auswertung. Nur das Spiel.</span></div>
-  </div>
+  <section>
+    <h2>Zwei Welten in einer App</h2>
+    <p>Beim Anlegen eines Profils wählst du Kind oder Erwachsen. Davon hängen Aussehen, Hilfen und Stufen ab, für jedes Profil einzeln.</p>
+    <div class="welten">
+      <div class="welt kind">
+        <div class="phones">
+          <img class="phone" src="img/kind-begruessung.jpg" alt="Begrüßung im Kindermodus mit Roboter" loading="lazy">
+          <img class="phone" src="img/kind-spiel.jpg" alt="4×4-Rätsel mit Einführung durch den Roboter" loading="lazy">
+        </div>
+        <h3>Für Kinder</h3>
+        <p>Ein Roboter erklärt, liest vor und freut sich mit. Es geht los mit 4×4, nach fünf gelösten Rätseln wird die nächste Stufe frei.</p>
+        <ul>
+          <li>Einführung beim ersten Rätsel jeder Größe</li>
+          <li>Tiere statt Zahlen bei 4×4 und 6×6, wenn gewünscht</li>
+          <li>Sticker für erste Erfolge</li>
+          <li>Eltern-Ecke hinter einer kleinen Rechenaufgabe</li>
+        </ul>
+      </div>
+      <div class="welt erw">
+        <div class="phones">
+          <img class="phone" src="img/erw-begruessung.jpg" alt="Begrüßung im Erwachsenenmodus mit Glaskacheln" loading="lazy">
+          <img class="phone" src="img/erw-start.jpg" alt="Startseite für Erwachsene mit Rätsel des Tages" loading="lazy">
+        </div>
+        <h3>Für Erwachsene</h3>
+        <p>Ruhig, in Glas und Metall. Alle Größen und vier Stufen sind von Anfang an frei, von leicht bis experte.</p>
+        <ul>
+          <li>Merkzahlen, die sich beim Setzen selbst aufräumen</li>
+          <li>Zeit, Bestwerte und Lieblingszeit in der Statistik</li>
+          <li>Rätsel des Tages, für alle Profile gleich</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Stand</h2>
-  <p>Quadrino ist in Vorbereitung und wird zunächst über TestFlight getestet. Sobald die App im App Store erscheint, steht der Link hier.</p>
+  <section>
+    <div class="split">
+      <div>
+        <h2>Hinweise, die erklären</h2>
+        <p>Die Glühbirne verrät nicht einfach eine Zahl. Erst nennt sie die Technik und zeigt, wo du hinschauen sollst. Wer dann noch nicht weiterkommt, bekommt das Feld mit Begründung, erst zuletzt die Zahl. Gezählt wird das als ein Hinweis.</p>
+        <p>Schwere und Experten-Rätsel lassen sich immer mit diesen Techniken lösen. Raten ist nie nötig.</p>
+        <ul class="techniken">
+          <li>Einzige Möglichkeit</li>
+          <li>Versteckter Einer</li>
+          <li>Eingesperrte Kandidaten</li>
+          <li>Nacktes Paar</li>
+          <li>Verstecktes Paar</li>
+          <li>X-Wing</li>
+        </ul>
+      </div>
+      <div><img class="phone" src="img/erw-hinweis.jpg" alt="9×9-Rätsel, der Hinweis nennt die Technik Versteckter Einer und hebt Reihe 7 hervor" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="split links">
+      <div><img class="phone" src="img/profile.jpg" alt="Profilwahl mit den Profilen Mia und Silvio" loading="lazy"></div>
+      <div>
+        <h2>Jeder spielt mit eigenem Profil</h2>
+        <p>Jedes Familienmitglied hat eigene Sterne, eigene Stufen und ein eigenes Bild: 16 Tiere und Figuren für Kinder, 16 Objekte aus Glas und Metall für Erwachsene.</p>
+        <p>Der Fortschritt liegt in deiner privaten iCloud und ist auf iPhone und iPad gleich. Ohne iCloud bleibt alles auf dem Gerät.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="narrow">
+    <h2>Was es kosten wird</h2>
+    <div class="preis">
+      <div class="betrag">4,99 €</div>
+      <div>
+        <p>Laden ist kostenlos. 4×4 und das Rätsel des Tages bleiben immer frei, dazu ein paar Rätsel jeder höheren Stufe zum Ausprobieren. Ein einziger Kauf schaltet alles frei, über die Familienfreigabe für die ganze Familie.</p>
+        <p class="note">Keine Werbung, kein Abo, kein Konto. Die App sammelt keine Daten. Der Preis ist geplant und gilt ab dem Erscheinen im App Store.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="narrow">
+    <h2>Stand</h2>
+    <p>Quadrino wird gerade über TestFlight getestet. Sobald die App im App Store erscheint, steht der Link hier. Fragen und Wünsche gern über <a href="support.html">Support</a>.</p>
+  </section>
 
   <footer>
     <span>© 2026 Silvio Lange</span>

@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quadrino – Sudoku for everyone</title>
-<meta name="description" content="Quadrino is a Sudoku for iPhone and iPad: a robot-guided path for children, a calm design for adults. No account, no ads, sync through iCloud.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quadrino Sudoku</title>
+<meta name="description" content="Quadrino is a Sudoku for iPhone and iPad that children and adults share: for kids with a robot and levels from 4×4 to 9×9, for adults in glass and metal with hints that name the solving technique. No ads, no account.">
+<meta property="og:title" content="Quadrino Sudoku">
+<meta property="og:description" content="One Sudoku for children and adults. No ads, no account, no subscription.">
+<meta property="og:image" content="https://slange-a11y.github.io/quadrino/img/teaser.jpg">
+<meta property="og:type" content="website">
 <link rel="icon" href="../icon.png">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -16,35 +20,104 @@
       <div class="name">Quadrino</div>
       <div class="sub">Sudoku for iPhone and iPad</div>
     </div>
+    <nav class="menu">
+      <a class="active" href="./">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="../">Deutsch</a>
+    </nav>
   </header>
+</div>
 
-  <nav class="menu">
-    <a class="active" href="./">Home</a>
-    <a href="support.html">Support</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="../">Deutsch</a>
-  </nav>
+<div class="hero">
+  <img src="../img/banner.jpg" srcset="../img/banner-768.jpg 768w, ../img/banner.jpg 1536w" sizes="(max-width: 800px) 100vw, 1240px" alt="Cream play tiles and a small robot on the left, a grid of glass tiles on the right">
+</div>
 
-  <h1>A Sudoku that grows with you.</h1>
-  <p class="lead">Children learn what rows, columns and blocks mean from a small robot and work their way up from 4×4 to 9×9. Adults play in a calm, clear design with notes, a timer and four difficulty levels.</p>
-
-  <div class="hero-grid" aria-hidden="true">
-    <i>1</i><i></i><i></i>
-    <i></i><i class="on">5</i><i></i>
-    <i></i><i></i><i>9</i>
+<div class="wrap">
+  <div class="intro">
+    <h1>One Sudoku for children and adults.</h1>
+    <p>Children learn from a small robot what row, column and block mean. Adults play up to 9×9 expert in the same app, and the hints name the technique that gets you there yourself.</p>
   </div>
 
-  <div class="tiles">
-    <div class="tile"><b>Two looks</b><span>When you create a profile you choose child or adult. That sets the look, the help and the pace.</span></div>
-    <div class="tile"><b>Hints with reasons</b><span>The light bulb doesn't just show the number, it explains why only that one fits.</span></div>
-    <div class="tile"><b>Several profiles</b><span>Everyone in the family has their own progress, stars and stickers.</span></div>
-    <div class="tile"><b>The same on every device</b><span>Progress lives in your iCloud. Without iCloud it stays on the device.</span></div>
-    <div class="tile"><b>Puzzle of the day</b><span>One puzzle every day, the same for all profiles.</span></div>
-    <div class="tile"><b>Nothing in the background</b><span>No account, no ads, no analytics. Just the game.</span></div>
-  </div>
+  <section>
+    <h2>Two worlds in one app</h2>
+    <p>When you create a profile, you choose child or adult. That decides the look, the help and the levels, separately for every profile.</p>
+    <div class="welten">
+      <div class="welt kind">
+        <div class="phones">
+          <img class="phone" src="../img/kind-begruessung.jpg" alt="Welcome screen in kids mode with the robot" loading="lazy">
+          <img class="phone" src="../img/kind-spiel.jpg" alt="4×4 puzzle with the robot's introduction" loading="lazy">
+        </div>
+        <h3>For children</h3>
+        <p>A robot explains, reads aloud and cheers along. It starts with 4×4; after five solved puzzles the next level opens.</p>
+        <ul>
+          <li>Introduction at the first puzzle of every size</li>
+          <li>Animals instead of numbers for 4×4 and 6×6, if wanted</li>
+          <li>Stickers for first achievements</li>
+          <li>Parents' corner behind a small sum</li>
+        </ul>
+      </div>
+      <div class="welt erw">
+        <div class="phones">
+          <img class="phone" src="../img/erw-begruessung.jpg" alt="Welcome screen in adult mode with glass tiles" loading="lazy">
+          <img class="phone" src="../img/erw-start.jpg" alt="Adult home screen with today's puzzle" loading="lazy">
+        </div>
+        <h3>For adults</h3>
+        <p>Calm, in glass and metal. All sizes and four levels are open from the start, from easy to expert.</p>
+        <ul>
+          <li>Notes that tidy themselves up as you place numbers</li>
+          <li>Time, best results and favourite time of day in the statistics</li>
+          <li>Puzzle of the day, the same for every profile</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Status</h2>
-  <p>Quadrino is in preparation and is being tested through TestFlight first. The App Store link will appear here once the app is released.</p>
+  <section>
+    <div class="split">
+      <div>
+        <h2>Hints that explain</h2>
+        <p>The bulb doesn't just give away a number. First it names the technique and shows you where to look. If you're still stuck, you get the cell with the reasoning, and only then the number. It all counts as one hint.</p>
+        <p>Hard and expert puzzles can always be solved with these techniques. You never have to guess.</p>
+        <ul class="techniken">
+          <li>Naked single</li>
+          <li>Hidden single</li>
+          <li>Locked candidates</li>
+          <li>Naked pair</li>
+          <li>Hidden pair</li>
+          <li>X-Wing</li>
+        </ul>
+      </div>
+      <div><img class="phone" src="../img/erw-hinweis.jpg" alt="9×9 puzzle, the hint names the technique and highlights row 7" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="split links">
+      <div><img class="phone" src="../img/profile.jpg" alt="Profile chooser with the profiles Mia and Silvio" loading="lazy"></div>
+      <div>
+        <h2>Everyone plays with their own profile</h2>
+        <p>Each family member has their own stars, their own levels and their own picture: 16 animals and characters for children, 16 objects in glass and metal for adults.</p>
+        <p>Progress lives in your private iCloud and is the same on iPhone and iPad. Without iCloud, everything stays on the device.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="narrow">
+    <h2>What it will cost</h2>
+    <div class="preis">
+      <div class="betrag">€4.99</div>
+      <div>
+        <p>The download is free. 4×4 and the puzzle of the day stay free for good, plus a few puzzles of every higher level to try. A single purchase unlocks everything, shared with the whole family through Family Sharing.</p>
+        <p class="note">No ads, no subscription, no account. The app collects no data. The price is planned and applies once the app is in the App Store.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="narrow">
+    <h2>Status</h2>
+    <p>Quadrino is currently being tested through TestFlight. As soon as it is in the App Store, the link will be here. Questions and wishes are welcome through <a href="support.html">Support</a>.</p>
+  </section>
 
   <footer>
     <span>© 2026 Silvio Lange</span>
