@@ -10,9 +10,18 @@
 <meta property="og:image" content="https://slange-a11y.github.io/quadrino/img/teaser.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="../icon.png">
-<link rel="stylesheet" href="../style.css?v=202611091659">
+<link rel="stylesheet" href="../style.css?v=202611091707">
 </head>
 <body>
+<div class="buehne" aria-hidden="true">
+  <i style="width:120px;height:120px;left:6%;top:12%;--d:46s;--x:60px;--y:80px;--r0:-8deg;--r1:10deg"></i>
+  <i style="width:70px;height:70px;left:82%;top:8%;--d:38s;--x:-50px;--y:90px;--r0:12deg;--r1:-6deg"></i>
+  <i style="width:160px;height:160px;left:70%;top:46%;--d:58s;--x:-80px;--y:-60px;--r0:6deg;--r1:-14deg"></i>
+  <i style="width:90px;height:90px;left:14%;top:62%;--d:52s;--x:70px;--y:-90px;--r0:-14deg;--r1:4deg"></i>
+  <i style="width:54px;height:54px;left:46%;top:30%;--d:34s;--x:40px;--y:60px;--r0:20deg;--r1:-10deg"></i>
+  <i style="width:110px;height:110px;left:40%;top:84%;--d:64s;--x:-60px;--y:-70px;--r0:-4deg;--r1:16deg"></i>
+  <i style="width:64px;height:64px;left:90%;top:76%;--d:44s;--x:-40px;--y:-50px;--r0:8deg;--r1:-12deg"></i>
+</div>
 <div class="wrap">
   <header class="top">
     <img src="../icon.png" width="48" height="48" alt="">
@@ -230,5 +239,20 @@
     <a class="lang" href="../">Deutsch</a>
   </footer>
 </div>
+<script>
+// Abschnitte gleiten beim Scrollen herein. Was beim Laden schon zu sehen ist, bleibt sofort stehen.
+(function () {
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.documentElement.classList.add("js");
+  var ziele = document.querySelectorAll("section, .band");
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("da"); io.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -8% 0px" });
+  ziele.forEach(function (el) {
+    if (el.getBoundingClientRect().top < innerHeight) return;
+    el.classList.add("gleiten"); io.observe(el);
+  });
+})();
+</script>
 </body>
 </html>
