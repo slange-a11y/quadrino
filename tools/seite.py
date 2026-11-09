@@ -95,12 +95,12 @@ def page(t):
     nav = "\n".join('      <a%s href="%s">%s</a>' % (ACT if a else "", h, l) for h, l, a in t["nav"])
     li = lambda xs: "\n".join("          <li>%s</li>" % x for x in xs)
     sh = t["shots"]
-    rob = "\n".join('        <figure><img src="%simg/roboter/%s.png" alt="" loading="lazy"><figcaption>%s</figcaption></figure>' % (p, m, c) for m, c in t["rob"])
+    rob = "\n".join('        <figure><img src="%simg/roboter/%s.png" width="150" height="150" alt="" loading="lazy"><figcaption>%s</figcaption></figure>' % (p, m, c) for m, c in t["rob"])
     tech = "\n".join("          <li>%s</li>" % x for x in t["tech"])
-    medk = "\n".join('          <img src="%simg/medaille/K-%s.png" alt="" loading="lazy">' % (p, m) for m in MED)
-    mede = "\n".join('          <img src="%simg/medaille/E-%s.png" alt="" loading="lazy">' % (p, m) for m in MED)
-    av = "\n".join(['        <img class="kind" src="%simg/avatar/%s.jpg" alt="" loading="lazy">' % (p, n) for n in KIDS] + ['        <img class="erw" src="%simg/avatar/%s.jpg" alt="" loading="lazy">' % (p, n) for n in ADULT])
-    mot = "\n".join('      <figure><img src="%simg/motiv/%s.jpg" alt="" loading="lazy"><figcaption>%s</figcaption></figure>' % (p, m, c) for m, c in t["mot"])
+    medk = "\n".join('          <img src="%simg/medaille/K-%s.png" width="52" height="52" alt="" loading="lazy">' % (p, m) for m in MED)
+    mede = "\n".join('          <img src="%simg/medaille/E-%s.png" width="52" height="52" alt="" loading="lazy">' % (p, m) for m in MED)
+    av = "\n".join(['        <img class="kind" src="%simg/avatar/%s.jpg" width="72" height="72" alt="" loading="lazy">' % (p, n) for n in KIDS] + ['        <img class="erw" src="%simg/avatar/%s.jpg" width="72" height="72" alt="" loading="lazy">' % (p, n) for n in ADULT])
+    mot = "\n".join('      <figure><img src="%simg/motiv/%s.jpg" width="280" height="420" alt="" loading="lazy"><figcaption>%s</figcaption></figure>' % (p, m, c) for m, c in t["mot"])
     foot = "\n".join('    <a href="%s">%s</a>' % (h, l) for h, l in t["foot"])
     v = dict(t, p=p, nav_html=nav, kind_li_html=li(t["kind_li"]), erw_li_html=li(t["erw_li"]), rob_html=rob, tech_html=tech,
              medk=medk, mede=mede, av=av, mot_html=mot, foot_html=foot,
@@ -120,12 +120,12 @@ VORLAGE = '''<!doctype html>
 <meta property="og:image" content="https://slange-a11y.github.io/quadrino/img/teaser.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="{p}icon.png">
-<link rel="stylesheet" href="{p}style.css?v=202611091656">
+<link rel="stylesheet" href="{p}style.css?v=202611091659">
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <img src="{p}icon.png" alt="">
+    <img src="{p}icon.png" width="48" height="48" alt="">
     <div>
       <div class="name">Quadrino</div>
       <div class="sub">{sub}</div>
@@ -137,7 +137,7 @@ VORLAGE = '''<!doctype html>
 </div>
 
 <div class="hero">
-  <img src="{p}img/banner.jpg" srcset="{p}img/banner-768.jpg 768w, {p}img/banner.jpg 1536w" sizes="(max-width: 800px) 100vw, 1240px" alt="{banner_alt}">
+  <img src="{p}img/banner.jpg" width="1536" height="1024" srcset="{p}img/banner-768.jpg 768w, {p}img/banner.jpg 1536w" sizes="(max-width: 800px) 100vw, 1240px" alt="{banner_alt}">
 </div>
 
 <div class="wrap">
@@ -146,7 +146,7 @@ VORLAGE = '''<!doctype html>
       <h1>{h1}</h1>
       <p>{intro}</p>
     </div>
-    <img src="{p}img/roboter/wave.png" alt="{robot_alt}">
+    <img src="{p}img/roboter/wave.png" width="150" height="150" alt="{robot_alt}">
   </div>
 
   <section>
@@ -155,8 +155,8 @@ VORLAGE = '''<!doctype html>
     <div class="welten">
       <div class="welt kind">
         <div class="phones">
-          <img class="phone" src="{p}img/{s0}.jpg" alt="{a0}" loading="lazy">
-          <img class="phone" src="{p}img/{s1}.jpg" alt="{a1}" loading="lazy">
+          <img class="phone" width="230" height="500" src="{p}img/{s0}.jpg" alt="{a0}" loading="lazy">
+          <img class="phone" width="230" height="500" src="{p}img/{s1}.jpg" alt="{a1}" loading="lazy">
         </div>
         <h3>{kind_h}</h3>
         <p>{kind_p}</p>
@@ -166,8 +166,8 @@ VORLAGE = '''<!doctype html>
       </div>
       <div class="welt erw">
         <div class="phones">
-          <img class="phone" src="{p}img/{s2}.jpg" alt="{a2}" loading="lazy">
-          <img class="phone" src="{p}img/{s3}.jpg" alt="{a3}" loading="lazy">
+          <img class="phone" width="230" height="500" src="{p}img/{s2}.jpg" alt="{a2}" loading="lazy">
+          <img class="phone" width="230" height="500" src="{p}img/{s3}.jpg" alt="{a3}" loading="lazy">
         </div>
         <h3>{erw_h}</h3>
         <p>{erw_p}</p>
@@ -202,14 +202,14 @@ VORLAGE = '''<!doctype html>
 {tech_html}
         </ul>
       </div>
-      <div><img class="phone" src="{p}img/erw-hinweis.jpg" alt="{hin_alt}" loading="lazy"></div>
+      <div><img class="phone" width="230" height="500" src="{p}img/erw-hinweis.jpg" alt="{hin_alt}" loading="lazy"></div>
     </div>
   </section>
 
   <section>
     <div class="gewinn">
-      <img class="phone" src="{p}img/kind-gewonnen.jpg" alt="{ga0}" loading="lazy">
-      <img class="phone" src="{p}img/erw-gewonnen.jpg" alt="{ga1}" loading="lazy">
+      <img class="phone" width="230" height="500" src="{p}img/kind-gewonnen.jpg" alt="{ga0}" loading="lazy">
+      <img class="phone" width="230" height="500" src="{p}img/erw-gewonnen.jpg" alt="{ga1}" loading="lazy">
       <div>
         <h2>{gew_h}</h2>
         <p>{gew_p}</p>
@@ -258,7 +258,7 @@ VORLAGE = '''<!doctype html>
           </div>
         </div>
       </div>
-      <img class="phone" src="{p}img/kaufseite.jpg" alt="{kauf_alt}" loading="lazy">
+      <img class="phone" width="230" height="500" src="{p}img/kaufseite.jpg" alt="{kauf_alt}" loading="lazy">
     </div>
   </section>
 

@@ -72,7 +72,7 @@ section { padding-block: var(--gap-l) 0; }
 .phones img { width: calc(50% - 6px); max-width: 220px; }
 
 .phone {
-  display: block; height: auto; border-radius: 26px;
+  display: block; height: auto; max-width: 100%; border-radius: 26px;
   border: 1px solid var(--line);
   box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
 }
@@ -134,7 +134,7 @@ p.lead { font-size: 1.12rem; }
 .medaillen.erw { margin-top: 6px; }
 
 .avatare { display: grid; grid-template-columns: repeat(8, 1fr); gap: 10px; margin-top: 22px; }
-.avatare img { width: 100%; max-width: 72px; aspect-ratio: 1; border-radius: 50%; display: block; margin: 0 auto; border: 3px solid var(--mint); }
+.avatare img { width: 100%; max-width: 72px; height: auto; aspect-ratio: 1; border-radius: 50%; display: block; margin: 0 auto; border: 3px solid var(--mint); }
 .avatare img.kind { border-color: #ec4899; }
 .avatare img.kind:nth-child(3n) { border-color: #f59e0b; }
 .avatare img.kind:nth-child(4n) { border-color: #3b82f6; }
