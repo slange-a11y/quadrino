@@ -110,3 +110,57 @@ p.lead { font-size: 1.12rem; }
   .hero img { max-height: none; }
   .intro p { font-size: 1.02rem; }
 }
+
+/* ---------- Ausbau 09.11.2026: Bänder, Roboter, Gewinn, Profile, Motive ---------- */
+.band { margin-top: var(--gap-l); padding-block: 48px; }
+.band.creme { background: var(--cream); color: var(--ink); }
+.band.creme p, .band.creme .note { color: #3b4a4c; }
+.band.graphit { background: var(--graphit); }
+.band section { padding-block: 0; }
+
+.intro-zeile { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: end; }
+.intro-zeile img { width: 150px; height: auto; }
+
+.roboter { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 26px; }
+.roboter figure { margin: 0; text-align: center; min-width: 0; }
+.roboter img { width: 100%; max-width: 150px; height: auto; display: block; margin: 0 auto; }
+.roboter figcaption { font-size: .9rem; color: #3b4a4c; margin-top: 4px; }
+
+.gewinn { display: grid; grid-template-columns: auto auto 1fr; gap: 24px; align-items: center; }
+.gewinn .phone { width: 230px; max-width: 100%; }
+.gewinn > div { min-width: 0; }
+.medaillen { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.medaillen img { width: 52px; height: 52px; }
+.medaillen.erw { margin-top: 6px; }
+
+.avatare { display: grid; grid-template-columns: repeat(8, 1fr); gap: 10px; margin-top: 22px; }
+.avatare img { width: 100%; max-width: 72px; aspect-ratio: 1; border-radius: 50%; display: block; margin: 0 auto; border: 3px solid var(--mint); }
+.avatare img.kind { border-color: #ec4899; }
+.avatare img.kind:nth-child(3n) { border-color: #f59e0b; }
+.avatare img.kind:nth-child(4n) { border-color: #3b82f6; }
+.avatare img.erw { border-color: #14b8a6; }
+.avatare img.erw:nth-child(3n) { border-color: #a9c0c1; }
+
+.motive { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 22px; }
+.motive figure { margin: 0; min-width: 0; }
+.motive img { width: 100%; height: auto; border-radius: 12px; display: block; aspect-ratio: 2 / 3; object-fit: cover; object-position: 50% 20%; }
+.motive figcaption { font-size: .88rem; color: var(--muted); margin-top: 6px; }
+
+.preis-zeile { display: grid; grid-template-columns: 1fr 220px; gap: 36px; align-items: center; }
+.preis-zeile .phone { width: 100%; }
+
+@media (max-width: 820px) {
+  .roboter { grid-template-columns: repeat(3, 1fr); row-gap: 18px; }
+  .gewinn { grid-template-columns: 1fr 1fr; }
+  .gewinn > div { grid-column: 1 / -1; }
+  .gewinn .phone { width: 100%; }
+  .avatare { grid-template-columns: repeat(6, 1fr); }
+  .motive { grid-template-columns: repeat(2, 1fr); }
+  .preis-zeile { grid-template-columns: 1fr; }
+  .preis-zeile .phone { max-width: 240px; }
+}
+@media (max-width: 560px) {
+  .intro-zeile { grid-template-columns: 1fr; }
+  .intro-zeile img { width: 110px; }
+  .avatare { grid-template-columns: repeat(4, 1fr); }
+}

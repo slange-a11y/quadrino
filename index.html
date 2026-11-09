@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Quadrino Sudoku</title>
-<meta name="description" content="Quadrino ist ein Sudoku für iPhone und iPad, in dem Kinder und Erwachsene spielen: für Kinder mit Roboter und Stufen von 4×4 bis 9×9, für Erwachsene in Glas und Metall mit Hinweisen, die die Lösungstechnik nennen. Ohne Werbung, ohne Konto.">
+<meta name="description" content="Quadrino ist ein Sudoku für iPhone und iPad, in dem Kinder und Erwachsene spielen: für Kinder mit Roboter und Stufen von 4×4 bis 9×9, für Erwachsene in Glas und Metall mit Hinweisen, die die Lösungstechnik nennen. Ohne Werbung, ohne Abo.">
 <meta property="og:title" content="Quadrino Sudoku">
 <meta property="og:description" content="Ein Sudoku für Kinder und Erwachsene. Ohne Werbung, ohne Konto, ohne Abo.">
 <meta property="og:image" content="https://slange-a11y.github.io/quadrino/img/teaser.jpg">
@@ -34,9 +34,12 @@
 </div>
 
 <div class="wrap">
-  <div class="intro">
-    <h1>Ein Sudoku für Kinder und Erwachsene.</h1>
-    <p>Kinder lernen mit einem kleinen Roboter, was Reihe, Spalte und Block bedeuten. Erwachsene spielen in derselben App bis 9×9 experte, und die Hinweise nennen die Technik, mit der man selbst draufkommt.</p>
+  <div class="intro intro-zeile">
+    <div>
+      <h1>Ein Sudoku für Kinder und Erwachsene.</h1>
+      <p>Kinder lernen mit einem kleinen Roboter, was Reihe, Spalte und Block bedeuten. Erwachsene spielen in derselben App bis 9×9 experte, und die Hinweise nennen die Technik, mit der man selbst draufkommt. Ohne Werbung, ohne Abo, ohne Datensammeln.</p>
+    </div>
+    <img src="img/roboter/wave.png" alt="Der Roboter winkt">
   </div>
 
   <section>
@@ -52,8 +55,8 @@
         <p>Ein Roboter erklärt, liest vor und freut sich mit. Es geht los mit 4×4, nach fünf gelösten Rätseln wird die nächste Stufe frei.</p>
         <ul>
           <li>Einführung beim ersten Rätsel jeder Größe</li>
+          <li>Große Zahlentasten, gut zu treffen</li>
           <li>Tiere statt Zahlen bei 4×4 und 6×6, wenn gewünscht</li>
-          <li>Sticker für erste Erfolge</li>
           <li>Eltern-Ecke hinter einer kleinen Rechenaufgabe</li>
         </ul>
       </div>
@@ -63,16 +66,35 @@
           <img class="phone" src="img/erw-start.jpg" alt="Startseite für Erwachsene mit Rätsel des Tages" loading="lazy">
         </div>
         <h3>Für Erwachsene</h3>
-        <p>Ruhig, in Glas und Metall. Alle Größen und vier Stufen sind von Anfang an frei, von leicht bis experte.</p>
+        <p>Ruhig, in Glas und Metall. Alle Größen und vier Stufen von leicht bis experte, Merkzahlen, Zeit und Bestzeiten.</p>
         <ul>
           <li>Merkzahlen, die sich beim Setzen selbst aufräumen</li>
-          <li>Zeit, Bestwerte und Lieblingszeit in der Statistik</li>
+          <li>Bestzeit je Stufe und eine Statistik der letzten 14 Tage</li>
           <li>Rätsel des Tages, für alle Profile gleich</li>
         </ul>
       </div>
     </div>
   </section>
+</div>
 
+<div class="band creme">
+  <div class="wrap">
+    <section>
+      <h2>Ein Roboter, der mitdenkt</h2>
+      <p>Im Kindermodus begleitet er jedes Rätsel. Er zeigt, wo man hinschauen soll, liest vor, wenn man möchte, und bleibt freundlich, auch wenn eine Zahl nicht passt.</p>
+      <div class="roboter">
+        <figure><img src="img/roboter/happy.png" alt="" loading="lazy"><figcaption>begrüßt</figcaption></figure>
+        <figure><img src="img/roboter/wave.png" alt="" loading="lazy"><figcaption>winkt</figcaption></figure>
+        <figure><img src="img/roboter/think.png" alt="" loading="lazy"><figcaption>denkt mit</figcaption></figure>
+        <figure><img src="img/roboter/cheer.png" alt="" loading="lazy"><figcaption>jubelt</figcaption></figure>
+        <figure><img src="img/roboter/oops.png" alt="" loading="lazy"><figcaption>tröstet</figcaption></figure>
+        <figure><img src="img/roboter/proud.png" alt="" loading="lazy"><figcaption>ist stolz</figcaption></figure>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
   <section>
     <div class="split">
       <div>
@@ -93,24 +115,106 @@
   </section>
 
   <section>
-    <div class="split links">
-      <div><img class="phone" src="img/profile.jpg" alt="Profilwahl mit den Profilen Mia und Silvio" loading="lazy"></div>
+    <div class="gewinn">
+      <img class="phone" src="img/kind-gewonnen.jpg" alt="Gewinnmoment für Kinder mit Konfetti und drei Sternen" loading="lazy">
+      <img class="phone" src="img/erw-gewonnen.jpg" alt="Gewinnmoment für Erwachsene mit Zeit und neuer Bestzeit" loading="lazy">
       <div>
-        <h2>Jeder spielt mit eigenem Profil</h2>
-        <p>Jedes Familienmitglied hat eigene Sterne, eigene Stufen und ein eigenes Bild: 16 Tiere und Figuren für Kinder, 16 Objekte aus Glas und Metall für Erwachsene.</p>
-        <p>Der Fortschritt liegt in deiner privaten iCloud und ist auf iPhone und iPad gleich. Ohne iCloud bleibt alles auf dem Gerät.</p>
+        <h2>Gelöst!</h2>
+        <p>Wenn die letzte Zahl sitzt, läuft eine Lichtwelle über das Brett. Kinder bekommen Konfetti, Sterne und Sticker. Erwachsene sehen ihre Zeit hochzählen und wissen sofort, ob es eine neue Bestzeit war.</p>
+        <p class="note">Sticker für Kinder, Medaillen für Erwachsene:</p>
+        <div class="medaillen">
+          <img src="img/medaille/K-first4.png" alt="" loading="lazy">
+          <img src="img/medaille/K-first6.png" alt="" loading="lazy">
+          <img src="img/medaille/K-first9.png" alt="" loading="lazy">
+          <img src="img/medaille/K-nohint5.png" alt="" loading="lazy">
+          <img src="img/medaille/K-streak3.png" alt="" loading="lazy">
+          <img src="img/medaille/K-solved10.png" alt="" loading="lazy">
+          <img src="img/medaille/K-stars25.png" alt="" loading="lazy">
+          <img src="img/medaille/K-perfect.png" alt="" loading="lazy">
+        </div>
+        <div class="medaillen erw">
+          <img src="img/medaille/E-first4.png" alt="" loading="lazy">
+          <img src="img/medaille/E-first6.png" alt="" loading="lazy">
+          <img src="img/medaille/E-first9.png" alt="" loading="lazy">
+          <img src="img/medaille/E-nohint5.png" alt="" loading="lazy">
+          <img src="img/medaille/E-streak3.png" alt="" loading="lazy">
+          <img src="img/medaille/E-solved10.png" alt="" loading="lazy">
+          <img src="img/medaille/E-stars25.png" alt="" loading="lazy">
+          <img src="img/medaille/E-perfect.png" alt="" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
+</div>
 
-  <section class="narrow">
-    <h2>Was es kosten wird</h2>
-    <div class="preis">
-      <div class="betrag">4,99 €</div>
-      <div>
-        <p>Laden ist kostenlos. 4×4 und das Rätsel des Tages bleiben immer frei, dazu ein paar Rätsel jeder höheren Stufe zum Ausprobieren. Ein einziger Kauf schaltet alles frei, über die Familienfreigabe für die ganze Familie.</p>
-        <p class="note">Keine Werbung, kein Abo, kein Konto. Die App sammelt keine Daten. Der Preis ist geplant und gilt ab dem Erscheinen im App Store.</p>
+<div class="band graphit">
+  <div class="wrap">
+    <section>
+      <h2>Jeder spielt mit eigenem Profil</h2>
+      <p>Jedes Familienmitglied hat eigene Sterne, eigene Stufen und ein eigenes Bild: 16 Tiere und Figuren für Kinder, 16 Objekte aus Glas und Metall für Erwachsene. Der Fortschritt liegt in deiner privaten iCloud und ist auf iPhone und iPad gleich.</p>
+      <div class="avatare">
+        <img class="kind" src="img/avatar/katze.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/hund.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/fuchs.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/panda.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/frosch.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/eule.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/hase.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/pinguin.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/loewe.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/dino.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/roboter.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/rakete.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/einhorn.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/baer.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/koala.jpg" alt="" loading="lazy">
+        <img class="kind" src="img/avatar/schmetterling.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/kompass.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/fueller.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/springer.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/kristall.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/mond.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/blatt.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/welle.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/berg.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/kranich.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/sanduhr.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/zahnrad.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/feder.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/stern.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/raute.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/anker.jpg" alt="" loading="lazy">
+        <img class="erw" src="img/avatar/tasse.jpg" alt="" loading="lazy">
       </div>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <h2>Jeden Tag ein anderes Startbild</h2>
+    <p>Beim Öffnen begrüßt dich Quadrino mit deinem Stand und dem Rätsel des Tages. Das Bild dahinter wechselt täglich.</p>
+    <div class="motive">
+      <figure><img src="img/motiv/glas.jpg" alt="" loading="lazy"><figcaption>Glas, für Erwachsene</figcaption></figure>
+      <figure><img src="img/motiv/metall.jpg" alt="" loading="lazy"><figcaption>Metall, für Erwachsene</figcaption></figure>
+      <figure><img src="img/motiv/kacheln.jpg" alt="" loading="lazy"><figcaption>Kacheln, für Kinder</figcaption></figure>
+      <figure><img src="img/motiv/werkstatt.jpg" alt="" loading="lazy"><figcaption>Werkstatt, für Kinder</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="preis-zeile">
+      <div>
+        <h2>Was es kostet</h2>
+        <div class="preis">
+          <div class="betrag">4,99 €</div>
+          <div>
+            <p>Laden ist kostenlos. 4×4 und das Rätsel des Tages bleiben immer frei, dazu zwei Rätsel jeder höheren Stufe zum Ausprobieren. Ein einziger Kauf schaltet alles frei, über die Familienfreigabe für die ganze Familie.</p>
+            <p class="note">Kein Abo, keine Werbung, kein Konto. Die App sammelt keine Daten. Bei Kinderprofilen fragt die App vor dem Kauf nach Mama oder Papa.</p>
+          </div>
+        </div>
+      </div>
+      <img class="phone" src="img/kaufseite.jpg" alt="Kaufseite „Quadrino komplett“ mit Preis" loading="lazy">
     </div>
   </section>
 
