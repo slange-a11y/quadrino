@@ -9,8 +9,8 @@ import re
 KIDS = "katze hund fuchs panda frosch eule hase pinguin loewe dino roboter rakete einhorn baer koala schmetterling".split()
 ADULT = "kompass fueller springer kristall mond blatt welle berg kranich sanduhr zahnrad feder stern raute anker tasse".split()
 MED = "first4 first6 first9 nohint5 streak3 solved10 stars25 perfect".split()
-TESTEN = "mailto:info@n3xthub.de?subject=Quadrino%20testen&body=Ich%20m%C3%B6chte%20Quadrino%20vorab%20testen.%20Meine%20Apple-ID%2FE-Mail%3A%20"
-TESTEN_EN = "mailto:info@n3xthub.de?subject=Quadrino%20beta&body=I%27d%20like%20to%20try%20Quadrino%20early.%20My%20Apple%20ID%2Femail%3A%20"
+TESTEN = "https://testflight.apple.com/join/FUYYN7MQ"
+TESTEN_EN = "https://testflight.apple.com/join/FUYYN7MQ"
 CSSV = "202611091659"
 
 T = {
@@ -19,7 +19,7 @@ T = {
   desc="Quadrino ist das Sudoku für die ganze Familie: Kinder lernen spielend mit ihrem Roboter, Erwachsene finden ihre ruhigen Minuten. Ohne Werbung, ohne Abo, ohne Datensammeln.",
   ogdesc="Das Sudoku für die ganze Familie. Ohne Werbung, ohne Abo, ohne Datensammeln.",
   testen=TESTEN, cta="Kostenlos testen", cta_nav="Testen", wie="So funktioniert’s",
-  cta_hinweis="Quadrino ist gerade in der Testphase. Schreib uns kurz, wir schicken dir die Einladung über TestFlight. Bald im App Store.",
+  cta_hinweis="Quadrino ist gerade in der Testphase. Der Knopf öffnet Apples TestFlight, dort installierst du die Testversion. Dein Feedback fließt direkt in die App. Die Plätze sind begrenzt, bald gibt es Quadrino im App Store.",
   banner_alt="Cremefarbene Spielkacheln und ein kleiner Roboter links, ein Raster aus Glaskacheln rechts",
   h1="Das Sudoku, das die ganze Familie liebt.",
   intro="Kinder lernen spielend mit ihrem kleinen Roboter. Erwachsene finden ihre ruhigen zehn Minuten am Tag. Und keiner muss sich durch Werbung klicken.",
@@ -69,7 +69,7 @@ T = {
   desc="Quadrino is the Sudoku for the whole family: children learn with their little robot, adults find their quiet minutes. No ads, no subscription, no data collection.",
   ogdesc="The Sudoku for the whole family. No ads, no subscription, no data collection.",
   testen=TESTEN_EN, cta="Try it free", cta_nav="Try it", wie="How it works",
-  cta_hinweis="Quadrino is in testing right now. Drop us a line and we'll send you a TestFlight invitation. Coming soon to the App Store.",
+  cta_hinweis="Quadrino is in testing right now. The button opens Apple's TestFlight, where you install the beta. Your feedback goes straight into the app. Spots are limited; Quadrino is coming soon to the App Store.",
   banner_alt="Cream play tiles and a small robot on the left, a grid of glass tiles on the right",
   h1="The Sudoku the whole family loves.",
   intro="Children learn with their little robot. Adults find their quiet ten minutes a day. And nobody has to click through ads.",
