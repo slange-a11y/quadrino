@@ -25,7 +25,7 @@ T = {
   intro="Kinder lernen spielend mit ihrem kleinen Roboter. Erwachsene finden ihre ruhigen zehn Minuten am Tag. Und keiner muss sich durch Werbung klicken.",
   vertrauen=["Ohne Werbung", "Ohne Abo", "Ohne Datensammeln", "Für iPhone und iPad", "Deutsch und Englisch"],
   robot_alt="Der Roboter winkt",
-  ver_h="Sudoku-Apps gibt es viele. Familientaugliche kaum.",
+  ver_h="Sudoku-Apps gibt es viele.<br>Familientaugliche kaum.",
   ver_p="Die bekannten Sudoku-Apps leben von Werbung. Mitten im Rätsel läuft ein Clip, und wer Ruhe will, zahlt dort 12,99 € bis 17,99 €, nur damit die Werbung verschwindet. Für Kinder ist das nichts.",
   ver_th=("", "Viele Sudoku-Apps", "Quadrino"),
   ver=[("Werbung", "mitten im Spiel", "keine, nie"),
@@ -34,23 +34,23 @@ T = {
        ("Daten", "Werbe-Tracking über Apps hinweg", "bleiben bei dir, in deiner iCloud"),
        ("Kinder", "selten mitgedacht", "eigene Welt mit Roboter und Eltern-Ecke"),
        ("Schwere Rätsel", "manchmal nur durch Raten lösbar", "immer mit Logik lösbar")],
-  kind_h="Für Kinder: ein Freund, der mitdenkt",
+  kind_h="Für Kinder:<br>ein Freund, der mitdenkt",
   kind_p1="Der kleine Roboter erklärt, was Reihe, Spalte und Block bedeuten. Er liest vor, freut sich mit und bleibt freundlich, wenn eine Zahl nicht passt. So wird aus Rätseln ein Erfolgserlebnis.",
   kind_p2="Es geht los mit 4×4. Nach fünf gelösten Rätseln wartet die nächste Stufe, bis hin zum großen 9×9. Für jeden Erfolg gibt es einen Sticker.",
   rob=[("happy", "begrüßt"), ("cheer", "jubelt"), ("oops", "tröstet")],
   kind_shots=[("kind-begruessung", "Begrüßung im Kindermodus mit Roboter"), ("kind-spiel", "4×4-Rätsel mit Einführung durch den Roboter")],
   zitat="Spielen, lernen, stolz sein. Ganz ohne Werbung dazwischen.",
-  erw_h="Für Erwachsene: zehn ruhige Minuten",
+  erw_h="Für Erwachsene:<br>zehn ruhige Minuten",
   erw_p1="Glas und Metall, keine Ablenkung. Alle Größen und vier Stufen bis experte, Merkzahlen, Zeit und Bestzeiten. Jeden Tag wartet ein neues Rätsel des Tages.",
   erw_p2="Und wenn du hängst: Die Glühbirne verrät nicht einfach die Zahl. Sie nennt die Technik, mit der du selbst draufkommst. So wirst du mit jedem Rätsel besser.",
   tech=["Einzige Möglichkeit", "Versteckter Einer", "Eingesperrte Kandidaten", "Nacktes Paar", "Verstecktes Paar", "X-Wing"],
   erw_shots=[("erw-begruessung", "Begrüßung im Erwachsenenmodus mit Glaskacheln"), ("erw-hinweis", "Der Hinweis nennt die Technik Versteckter Einer")],
-  gew_h="Das Gefühl, wenn die letzte Zahl sitzt",
+  gew_h="Das Gefühl, wenn<br>die letzte Zahl sitzt",
   gew_p="Eine Lichtwelle läuft über das Brett. Für Kinder regnet es Konfetti, der Roboter jubelt, ein neuer Sticker kommt dazu. Erwachsene sehen ihre Zeit hochzählen und wissen sofort, ob es eine neue Bestzeit war.",
   gew_alt=("Gewinnmoment für Kinder mit Konfetti und drei Sternen", "Gewinnmoment für Erwachsene mit Zeit und neuer Bestzeit"),
   fam_h="Eine App. Die ganze Familie.",
   fam_p="Jeder bekommt sein eigenes Profil mit eigenem Bild, eigenen Sternen und eigenem Tempo. Der Fortschritt liegt in deiner privaten iCloud und ist auf iPhone und iPad gleich. Ein einziger Kauf gilt über die Familienfreigabe für alle.",
-  preis_h="Einmal 4,99 €. Für immer. Für alle.",
+  preis_h="Einmal 4,99 €.<br>Für immer. Für alle.",
   preis_p="Zum Ausprobieren bleiben 4×4 und das Rätsel des Tages immer frei, dazu zwei Rätsel jeder anderen Stufe. Wenn es euch gefällt, schaltet ein einziger Kauf alles frei. Kein Abo, das sich verlängert. Keine Werbung, die man wegkaufen muss.",
   preis_note="Bei Kinderprofilen fragt die App vor dem Kauf nach Mama oder Papa.",
   betrag="4,99 €", kauf_alt="Kaufseite „Quadrino komplett“ mit Preis",
@@ -75,7 +75,7 @@ T = {
   intro="Children learn with their little robot. Adults find their quiet ten minutes a day. And nobody has to click through ads.",
   vertrauen=["No ads", "No subscription", "No data collection", "For iPhone and iPad", "German and English"],
   robot_alt="The robot waves",
-  ver_h="There are plenty of Sudoku apps. Few are fit for families.",
+  ver_h="There are plenty of Sudoku apps.<br>Few are fit for families.",
   ver_p="The well-known Sudoku apps live on advertising. A clip plays in the middle of a puzzle, and if you want peace you pay €12.99 to €17.99 there just to make the ads go away. That's no place for children.",
   ver_th=("", "Many Sudoku apps", "Quadrino"),
   ver=[("Ads", "in the middle of a game", "none, ever"),
@@ -84,23 +84,23 @@ T = {
        ("Data", "ad tracking across apps", "stays with you, in your iCloud"),
        ("Children", "rarely considered", "their own world with robot and parents' corner"),
        ("Hard puzzles", "sometimes only by guessing", "always solvable by logic")],
-  kind_h="For children: a friend who thinks along",
+  kind_h="For children:<br>a friend who thinks along",
   kind_p1="The little robot explains what row, column and block mean. It reads aloud, cheers along and stays friendly when a number doesn't fit. Puzzles turn into moments of success.",
   kind_p2="It starts with 4×4. After five solved puzzles the next level waits, all the way up to the big 9×9. Every achievement earns a sticker.",
   rob=[("happy", "says hello"), ("cheer", "cheers"), ("oops", "comforts")],
   kind_shots=[("kind-begruessung", "Welcome screen in kids mode with the robot"), ("kind-spiel", "4×4 puzzle with the robot's introduction")],
   zitat="Play, learn, be proud. With no ads in between.",
-  erw_h="For adults: ten quiet minutes",
+  erw_h="For adults:<br>ten quiet minutes",
   erw_p1="Glass and metal, no distractions. All sizes and four levels up to expert, notes, time and best times. A new puzzle of the day waits every day.",
   erw_p2="And when you're stuck, the bulb doesn't just give away the number. It names the technique that gets you there yourself. You get better with every puzzle.",
   tech=["Naked single", "Hidden single", "Locked candidates", "Naked pair", "Hidden pair", "X-Wing"],
   erw_shots=[("erw-begruessung", "Welcome screen in adult mode with glass tiles"), ("erw-hinweis", "The hint names the technique Hidden single")],
-  gew_h="The feeling when the last number is in",
+  gew_h="The feeling when<br>the last number is in",
   gew_p="A wave of light runs across the board. Children get confetti, a cheering robot and a new sticker. Adults watch their time count up and see right away whether it was a new best.",
   gew_alt=("Winning moment for children with confetti and three stars", "Winning moment for adults with time and a new best"),
   fam_h="One app. The whole family.",
   fam_p="Everyone gets their own profile with their own picture, their own stars and their own pace. Progress lives in your private iCloud and is the same on iPhone and iPad. A single purchase covers everyone through Family Sharing.",
-  preis_h="€4.99 once. For good. For everyone.",
+  preis_h="€4.99 once.<br>For good. For everyone.",
   preis_p="To try it, 4×4 and the puzzle of the day stay free for good, plus two puzzles of every other level. If you like it, a single purchase unlocks everything. No subscription that renews. No ads you have to pay to remove.",
   preis_note="On child profiles the app asks for a parent before buying.",
   betrag="€4.99", kauf_alt="Purchase screen “Quadrino Complete” with price",
@@ -117,13 +117,9 @@ T = {
 }
 
 BUEHNE = '''<div class="buehne" aria-hidden="true">
-  <i style="width:96px;height:96px;left:2%;top:14%;--d:46s;--x:30px;--y:80px;--r0:-8deg;--r1:10deg"></i>
-  <i style="width:64px;height:64px;left:91%;top:10%;--d:38s;--x:-30px;--y:90px;--r0:12deg;--r1:-6deg"></i>
-  <i style="width:130px;height:130px;left:89%;top:48%;--d:58s;--x:-30px;--y:-60px;--r0:6deg;--r1:-14deg"></i>
-  <i style="width:80px;height:80px;left:1%;top:60%;--d:52s;--x:40px;--y:-90px;--r0:-14deg;--r1:4deg"></i>
-  <i style="width:48px;height:48px;left:95%;top:30%;--d:34s;--x:-20px;--y:60px;--r0:20deg;--r1:-10deg"></i>
-  <i style="width:100px;height:100px;left:3%;top:86%;--d:64s;--x:30px;--y:-70px;--r0:-4deg;--r1:16deg"></i>
-  <i style="width:58px;height:58px;left:93%;top:78%;--d:44s;--x:-30px;--y:-50px;--r0:8deg;--r1:-12deg"></i>
+  <i style="width:46vmax;height:46vmax;left:-14vmax;top:30vh;--d:48s;--x:12vw;--y:-10vh;--c:95,227,179;--a:.10"></i>
+  <i style="width:52vmax;height:52vmax;left:62vw;top:-12vh;--d:60s;--x:-14vw;--y:16vh;--c:24,120,128;--a:.22"></i>
+  <i style="width:40vmax;height:40vmax;left:70vw;top:70vh;--d:54s;--x:-10vw;--y:-14vh;--c:95,227,179;--a:.07"></i>
 </div>'''
 
 SKRIPT = '''<script>
