@@ -6,6 +6,10 @@ ein Ziel (kostenlos testen), Knopf oben und am Ende, Vergleich mit anderen
 Sudoku-Apps, Einwände in Fragen und Antworten. Keine erfundenen Bewertungen.
 """
 import re
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import roboter
 KIDS = "katze hund fuchs panda frosch eule hase pinguin loewe dino roboter rakete einhorn baer koala schmetterling".split()
 ADULT = "kompass fueller springer kristall mond blatt welle berg kranich sanduhr zahnrad feder stern raute anker tasse".split()
 MED = "first4 first6 first9 nohint5 streak3 solved10 stars25 perfect".split()
@@ -37,7 +41,7 @@ T = {
   kind_h="Für Kinder:<br>ein Freund, der mitdenkt",
   kind_p1="Der kleine Roboter erklärt, was Reihe, Spalte und Block bedeuten. Er liest vor, freut sich mit und bleibt freundlich, wenn eine Zahl nicht passt. So wird aus Rätseln ein Erfolgserlebnis.",
   kind_p2="Es geht los mit 4×4. Nach fünf gelösten Rätseln wartet die nächste Stufe, bis hin zum großen 9×9. Für jeden Erfolg gibt es einen Sticker.",
-  rob=[("happy", "begrüßt"), ("cheer", "jubelt"), ("oops", "tröstet")],
+  rob=[("happy", "begrüßt"), ("cheer", "jubelt"), ("talk", "tröstet")],
   kind_shots=[("kind-begruessung", "Begrüßung im Kindermodus mit Roboter"), ("kind-spiel", "4×4-Rätsel mit Einführung durch den Roboter")],
   zitat="Spielen, lernen, stolz sein. Ganz ohne Werbung dazwischen.",
   erw_h="Für Erwachsene:<br>zehn ruhige Minuten",
@@ -87,7 +91,7 @@ T = {
   kind_h="For children:<br>a friend who thinks along",
   kind_p1="The little robot explains what row, column and block mean. It reads aloud, cheers along and stays friendly when a number doesn't fit. Puzzles turn into moments of success.",
   kind_p2="It starts with 4×4. After five solved puzzles the next level waits, all the way up to the big 9×9. Every achievement earns a sticker.",
-  rob=[("happy", "says hello"), ("cheer", "cheers"), ("oops", "comforts")],
+  rob=[("happy", "says hello"), ("cheer", "cheers"), ("talk", "comforts")],
   kind_shots=[("kind-begruessung", "Welcome screen in kids mode with the robot"), ("kind-spiel", "4×4 puzzle with the robot's introduction")],
   zitat="Play, learn, be proud. With no ads in between.",
   erw_h="For adults:<br>ten quiet minutes",
@@ -143,7 +147,7 @@ def page(t):
     vertrauen = "".join("<li>%s</li>" % x for x in t["vertrauen"])
     th = "".join("<th>%s</th>" % x for x in t["ver_th"])
     ver = "\n".join('            <tr><th scope="row">%s</th><td data-label="%s">%s</td><td data-label="%s">%s</td></tr>' % (r[0], t["ver_th"][1], r[1], t["ver_th"][2], r[2]) for r in t["ver"])
-    rob = "\n".join('        <figure><img src="%simg/roboter/%s.png" width="150" height="150" alt="" loading="lazy"><figcaption>%s</figcaption></figure>' % (p, m, c) for m, c in t["rob"])
+    rob = "\n".join('        <figure>%s<figcaption>%s</figcaption></figure>' % (roboter.rig(m, p), c) for m, c in t["rob"])
     tech = "".join("<li>%s</li>" % x for x in t["tech"])
     av = "\n".join(['        <img class="kind" src="%simg/avatar/%s.jpg" width="72" height="72" alt="" loading="lazy">' % (p, n) for n in KIDS] +
                    ['        <img class="erw" src="%simg/avatar/%s.jpg" width="72" height="72" alt="" loading="lazy">' % (p, n) for n in ADULT])
@@ -164,6 +168,7 @@ def page(t):
 <meta property="og:type" content="website">
 <link rel="icon" href="{p}icon.png">
 <link rel="stylesheet" href="{p}style.css?v={CSSV}">
+<link rel="stylesheet" href="{p}roboter.css?v={CSSV}">
 </head>
 <body>
 {BUEHNE}
@@ -192,7 +197,7 @@ def page(t):
       <div class="cta-zeile">{knopf}<a class="cta leise" href="#so">{t["wie"]}</a></div>
       <ul class="vertrauen">{vertrauen}</ul>
     </div>
-    <img src="{p}img/roboter/wave.png" width="150" height="150" alt="{t["robot_alt"]}">
+    {roboter.rig("wave", p, t["robot_alt"])}
   </div>
 
   <section id="so">
@@ -313,6 +318,7 @@ if __name__ == "__main__":
     import os, time
     os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
     CSSV = time.strftime("%Y%m%d%H%M")
+    open("roboter.css", "w").write(roboter.css())
     open("index.html", "w").write(page(T["de"]))
     open("en/index.html", "w").write(page(T["en"]))
     for u in ["support.html", "datenschutz.html", "en/support.html", "en/privacy.html"]:

@@ -119,11 +119,11 @@ p.lead { font-size: 1.12rem; }
 .band section { padding-block: 0; }
 
 .intro-zeile { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: end; }
-.intro-zeile img { width: 150px; height: auto; }
+.intro-zeile .rig { width: 170px; }
 
 .roboter { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 26px; }
 .roboter figure { margin: 0; text-align: center; min-width: 0; }
-.roboter img { width: 100%; max-width: 150px; height: auto; display: block; margin: 0 auto; }
+.roboter .rig { max-width: 150px; }
 .roboter figcaption { font-size: .9rem; color: #3b4a4c; margin-top: 4px; }
 
 .gewinn { display: grid; grid-template-columns: auto auto 1fr; gap: 24px; align-items: center; }
@@ -161,7 +161,7 @@ p.lead { font-size: 1.12rem; }
 }
 @media (max-width: 560px) {
   .intro-zeile { grid-template-columns: 1fr; }
-  .intro-zeile img { width: 110px; }
+  .intro-zeile .rig { width: 110px; }
   .avatare { grid-template-columns: repeat(4, 1fr); }
 }
 
@@ -189,15 +189,8 @@ p.lead { font-size: 1.12rem; }
 .hero { overflow: hidden; }
 .hero img { animation: fahrt 26s ease-in-out infinite alternate; transform-origin: 30% 60%; }
 @keyframes fahrt { from { transform: scale(1); } to { transform: scale(1.07) translate(-1%, -1%); } }
-.roboter img { animation: atmen 3.4s ease-in-out infinite; transform-origin: 50% 100%; }
-.roboter figure:nth-child(2) img { animation-delay: -.6s; }
-.roboter figure:nth-child(3) img { animation-delay: -1.2s; }
-.roboter figure:nth-child(4) img { animation: huepfen 1.6s ease-in-out infinite; }
-.roboter figure:nth-child(5) img { animation-delay: -1.8s; }
-.roboter figure:nth-child(6) img { animation-delay: -2.4s; }
 @keyframes atmen { 0%, 100% { transform: scale(1, 1) rotate(-.6deg); } 50% { transform: scale(1.01, 1.035) rotate(.6deg); } }
 @keyframes huepfen { 0%, 100% { transform: translateY(0) scale(1, 1); } 40% { transform: translateY(-10px) scale(.98, 1.03); } 60% { transform: translateY(0) scale(1.03, .97); } }
-.intro-zeile img { animation: winken 2.6s ease-in-out infinite; transform-origin: 50% 100%; }
 @keyframes winken { 0%, 100% { transform: rotate(-2deg); } 50% { transform: rotate(3deg) translateY(-3px); } }
 .gewinn .phone:first-child { animation: schweben 6s ease-in-out infinite; }
 .gewinn .phone:nth-child(2) { animation: schweben 6s ease-in-out -3s infinite; }
@@ -208,7 +201,7 @@ p.lead { font-size: 1.12rem; }
 .js .gleiten { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
 .js .gleiten.da { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
-  .buehne::before, .buehne i, .hero img, .roboter img, .intro-zeile img, .gewinn .phone { animation: none !important; }
+  .buehne::before, .buehne i, .hero img, .gewinn .phone { animation: none !important; }
   .js .gleiten { opacity: 1; transform: none; transition: none; }
 }
 
@@ -334,7 +327,7 @@ footer { margin-top: var(--gap-l); padding-block: 26px 48px; }
             mask-image: linear-gradient(to bottom, #000 0, #000 78%, transparent 100%);
   }
   .intro { margin-top: -12px; }
-  .intro-zeile img { display: none; }
+  .intro-zeile .rig { display: none; }
   .cta-zeile .cta { flex: 1 1 auto; justify-content: center; }
   /* Tabelle wird zu Zeilen: Merkmal oben, darunter beide Seiten nebeneinander */
   .vergleich thead { display: none; }
