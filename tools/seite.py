@@ -117,13 +117,13 @@ T = {
 }
 
 BUEHNE = '''<div class="buehne" aria-hidden="true">
-  <i style="width:120px;height:120px;left:6%;top:12%;--d:46s;--x:60px;--y:80px;--r0:-8deg;--r1:10deg"></i>
-  <i style="width:70px;height:70px;left:82%;top:8%;--d:38s;--x:-50px;--y:90px;--r0:12deg;--r1:-6deg"></i>
-  <i style="width:160px;height:160px;left:70%;top:46%;--d:58s;--x:-80px;--y:-60px;--r0:6deg;--r1:-14deg"></i>
-  <i style="width:90px;height:90px;left:14%;top:62%;--d:52s;--x:70px;--y:-90px;--r0:-14deg;--r1:4deg"></i>
-  <i style="width:54px;height:54px;left:46%;top:30%;--d:34s;--x:40px;--y:60px;--r0:20deg;--r1:-10deg"></i>
-  <i style="width:110px;height:110px;left:40%;top:84%;--d:64s;--x:-60px;--y:-70px;--r0:-4deg;--r1:16deg"></i>
-  <i style="width:64px;height:64px;left:90%;top:76%;--d:44s;--x:-40px;--y:-50px;--r0:8deg;--r1:-12deg"></i>
+  <i style="width:96px;height:96px;left:2%;top:14%;--d:46s;--x:30px;--y:80px;--r0:-8deg;--r1:10deg"></i>
+  <i style="width:64px;height:64px;left:91%;top:10%;--d:38s;--x:-30px;--y:90px;--r0:12deg;--r1:-6deg"></i>
+  <i style="width:130px;height:130px;left:89%;top:48%;--d:58s;--x:-30px;--y:-60px;--r0:6deg;--r1:-14deg"></i>
+  <i style="width:80px;height:80px;left:1%;top:60%;--d:52s;--x:40px;--y:-90px;--r0:-14deg;--r1:4deg"></i>
+  <i style="width:48px;height:48px;left:95%;top:30%;--d:34s;--x:-20px;--y:60px;--r0:20deg;--r1:-10deg"></i>
+  <i style="width:100px;height:100px;left:3%;top:86%;--d:64s;--x:30px;--y:-70px;--r0:-4deg;--r1:16deg"></i>
+  <i style="width:58px;height:58px;left:93%;top:78%;--d:44s;--x:-30px;--y:-50px;--r0:8deg;--r1:-12deg"></i>
 </div>'''
 
 SKRIPT = '''<script>
@@ -146,7 +146,7 @@ def page(t):
     img = lambda src, alt, cls="phone", w=230, h=500: '<img class="%s" width="%d" height="%d" src="%simg/%s.jpg" alt="%s" loading="lazy">' % (cls, w, h, p, src, alt)
     vertrauen = "".join("<li>%s</li>" % x for x in t["vertrauen"])
     th = "".join("<th>%s</th>" % x for x in t["ver_th"])
-    ver = "\n".join("            <tr><td>%s</td><td>%s</td><td>%s</td></tr>" % r for r in t["ver"])
+    ver = "\n".join('            <tr><th scope="row">%s</th><td data-label="%s">%s</td><td data-label="%s">%s</td></tr>' % (r[0], t["ver_th"][1], r[1], t["ver_th"][2], r[2]) for r in t["ver"])
     rob = "\n".join('        <figure><img src="%simg/roboter/%s.png" width="150" height="150" alt="" loading="lazy"><figcaption>%s</figcaption></figure>' % (p, m, c) for m, c in t["rob"])
     tech = "".join("<li>%s</li>" % x for x in t["tech"])
     av = "\n".join(['        <img class="kind" src="%simg/avatar/%s.jpg" width="72" height="72" alt="" loading="lazy">' % (p, n) for n in KIDS] +
@@ -171,6 +171,7 @@ def page(t):
 </head>
 <body>
 {BUEHNE}
+<div class="kopf">
 <div class="wrap">
   <header class="top">
     <img src="{p}icon.png" width="48" height="48" alt="">
@@ -180,6 +181,7 @@ def page(t):
     </div>
     <div class="cta-klein"><a class="cta" href="{t["testen"]}">{t["cta_nav"]}</a></div>
   </header>
+</div>
 </div>
 
 <div class="hero">
